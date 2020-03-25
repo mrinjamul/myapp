@@ -25,7 +25,7 @@ class App extends Component {
 
     render() {
         return (
-            <div>
+            <div className="App">
                 <h1>{this.state.count}</h1>
                 <button onClick={this.handleClick}>Change!</button><br/>
                 <button onClick={this.handleReset}>Reset</button>
