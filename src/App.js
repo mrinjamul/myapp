@@ -8,17 +8,27 @@ class App extends Component {
         this.state = {
             count: 0
         }
-        this.handleClick = this.handleClick.bind(this)
+        this.handleIncrease = this.handleIncrease.bind(this)
+        this.handleDecrease = this.handleDecrease.bind(this)
         this.handleReset = this.handleReset.bind(this)
     }
 
-    handleClick() {
+    handleIncrease() {
         this.setState(prevState => {
             return {
                 count: prevState.count + 1
             }
         })
     }
+
+    handleDecrease() {
+        this.setState(prevState => {
+            return {
+                count: prevState.count !== 0 ? prevState.count - 1 : prevState.count =0
+            }
+        })
+    }
+
     handleReset() {
       this.setState({ count: 0 })
     }
@@ -27,8 +37,11 @@ class App extends Component {
         return (
             <div className="App">
                 <h1>{this.state.count}</h1>
-                <button onClick={this.handleClick}>Change!</button><br/>
+                <div className="button-class">
+                <button onClick={this.handleIncrease}>+</button>
                 <button onClick={this.handleReset}>Reset</button>
+                <button onClick={this.handleDecrease}>-</button>
+                </div>
             </div>
         )
     }
