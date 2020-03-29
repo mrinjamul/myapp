@@ -2,11 +2,12 @@
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://mrinjamul.github.io/myapp",
+  "homepage": "https://mrinjamul.github.io/myapp",
   "dependencies": {
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "bootstrap": "^4.4.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,6 +33,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.2.0"
   }
 }
